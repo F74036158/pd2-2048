@@ -240,7 +240,7 @@ void MainWindow::rand2(){
             return;
         }
         if(b[i].loc==a&&b[i].num==0&&!num4){
-            b[i].num=1024;
+            b[i].num=2;
             switch (b[i].loc) {
             case 1:ui->b1->setPixmap(QPixmap(":/new/prefix1/2.png"));y=1;break;
             case 2:ui->b2->setPixmap(QPixmap(":/new/prefix1/2.png"));y=1;break;
