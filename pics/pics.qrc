@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>frame.jpg</file>
+        <file>2.png</file>
+        <file>4.png</file>
+        <file>8.png</file>
+        <file>16.png</file>
+        <file>32.png</file>
+        <file>64.png</file>
+        <file>128.png</file>
+        <file>256.png</file>
+        <file>512.png</file>
+        <file>1024.png</file>
+        <file>2048.png</file>
+        <file>4096.png</file>
+        <file>0.png</file>
+        <file>reset.png</file>
+        <file>exit.png</file>
+        <file>gameover.jpg</file>
+        <file>frameg.jpg</file>
+        <file>gameoverg.jpg</file>
+        <file>wing.jpg</file>
+        <file>continue.png</file>
+    </qresource>
+</RCC>
