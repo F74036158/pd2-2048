@@ -21,5 +21,7 @@
         <file>gameoverg.jpg</file>
         <file>wing.jpg</file>
         <file>continue.png</file>
+        <file>choose.jpg</file>
+        <file>win.jpg</file>
     </qresource>
 </RCC>

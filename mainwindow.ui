@@ -440,7 +440,7 @@
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="score_2">
     <property name="geometry">
      <rect>
       <x>125</x>
@@ -492,6 +492,69 @@
      <bool>true</bool>
     </property>
    </widget>
+   <widget class="QLabel" name="choose">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>500</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="dog">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>250</y>
+      <width>150</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>AR DARLING</family>
+      <pointsize>40</pointsize>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>1.Dog</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="GG">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>330</y>
+      <width>150</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>AR DARLING</family>
+      <pointsize>40</pointsize>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string>2.GG</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
    <zorder>frame</zorder>
    <zorder>b1</zorder>
    <zorder>b2</zorder>
@@ -513,8 +576,11 @@
    <zorder>reset</zorder>
    <zorder>gameover</zorder>
    <zorder>score</zorder>
-   <zorder>label</zorder>
+   <zorder>score_2</zorder>
    <zorder>conti</zorder>
+   <zorder>choose</zorder>
+   <zorder>dog</zorder>
+   <zorder>GG</zorder>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>

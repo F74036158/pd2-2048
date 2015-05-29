@@ -56,7 +56,12 @@ void MainWindow::winn(){
         if(b[i].num==2048&&wintime==false){
             win=true;
             wintime=true;
-            ui->gameover->setPixmap(QPixmap(":/new/prefix1/wing.jpg"));
+            if(choose==1){
+                ui->gameover->setPixmap(QPixmap(":/new/prefix1/win.jpg"));
+            }
+            if(choose==2){
+                ui->gameover->setPixmap(QPixmap(":/new/prefix1/wing.jpg"));
+            }
             ui->conti->setIcon(QPixmap(":/new/prefix1/continue.png"));
             ui->conti->show();
         }
@@ -82,7 +87,12 @@ void MainWindow::gameover(){
         }
     }
     if(allnzero&&allcantplus){
-        ui->gameover->setPixmap(QPixmap(":/new/prefix1/gameoverg.jpg"));
+        if(choose==1){
+            ui->gameover->setPixmap(QPixmap(":/new/prefix1/gameover.jpg"));
+        }
+        if(choose==2){
+            ui->gameover->setPixmap(QPixmap(":/new/prefix1/gameoverg.jpg"));
+        }
     }
 }
 
@@ -305,9 +315,10 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     ui->exit->setIcon(QPixmap(":/new/prefix1/exit.png"));
     ui->reset->setIcon(QPixmap(":/new/prefix1/reset.png"));
-    ui->frame->setPixmap(QPixmap(":/new/prefix1/frameg.jpg"));
+    ui->choose->setPixmap(QPixmap(":/new/prefix1/choose.jpg"));
+    choose=0;
     sco=0;
-    win=false;
+    win=true;
     wintime=false;
     bloc();
     rand2();
@@ -582,9 +593,13 @@ void MainWindow::on_reset_clicked()
     }
     ui->gameover->clear();
     sco=0;
-    win=false;
+    win=true;
     wintime=false;
     ui->score->clear();
+    ui->choose->show();
+    ui->dog->show();
+    ui->GG->show();
+    ui->conti->close();
     rand2();
     rand2();
     shownum();
@@ -595,4 +610,24 @@ void MainWindow::on_conti_clicked()
     win=false;
     ui->gameover->clear();
     ui->conti->close();
+}
+
+void MainWindow::on_dog_clicked()
+{
+    choose=1;
+    win=false;
+    ui->frame->setPixmap(QPixmap(":/new/prefix1/frame.jpg"));
+    ui->dog->close();
+    ui->GG->close();
+    ui->choose->close();
+}
+
+void MainWindow::on_GG_clicked()
+{
+    choose=2;
+    win=false;
+    ui->frame->setPixmap(QPixmap(":/new/prefix1/frameg.jpg"));
+    ui->dog->close();
+    ui->GG->close();
+    ui->choose->close();
 }

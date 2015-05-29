@@ -34,10 +34,15 @@ public:
     int sco;
     bool win;
     bool wintime;
+    int choose;
 private slots:
     void on_reset_clicked();
 
     void on_conti_clicked();
+
+    void on_dog_clicked();
+
+    void on_GG_clicked();
 
 private:
     Ui::MainWindow *ui;
